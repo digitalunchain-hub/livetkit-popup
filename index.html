@@ -2,10 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>LiveKit Popup Test - No CSP</title>
+  <title>LiveKit Popup Test - CSP</title>
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https://cloud.livekit.io; script-src 'self' https://cloud.livekit.io; connect-src 'self' https://cloud.livekit.io wss://cloud.livekit.io; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 </head>
 <body>
-  <h1>LiveKit popup test (no CSP)</h1>
+  <h1>LiveKit popup test (CSP allowed)</h1>
 
   <script src="https://cloud.livekit.io/embed-popup.js"
           data-lk-agent="CA_eifcp5eLpyGL"
